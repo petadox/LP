@@ -1,0 +1,4 @@
+/opt/pccts/bin/antlr -gt example1.g
+/opt/pccts/bin/dlg -ci parser.dlg scan.c
+g++ -o example1 example1.c scan.c err.c -I/home/soft/PCCTS_v1.33/include/
+
